@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Post Explorer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>MY first Git Respository</h1>
-    <p>You need to overcome this subject to learn programming</p>
-    <i>Matthew (2026)</i>
 
-    <br>
-    <br>
-    <p id="display">Score: 0</p>
-    <button id="increment">Increment</button>
-    <button id="decrement">Decrement</button>
-    <button id="reset">Reset</button>
+  <div class="container">
 
+    <!-- the box in the middle of the screen -->
+    <div class="explorer-box">
+      <h1>Post Explorer</h1>
+
+      <button id="loadBtn">Load Posts</button>
+
+      <p id="status"></p>
+
+      <button id="retryBtn">Retry</button>
+    </div>
+
+    <!-- the posts show up below the box -->
+    <div id="postsContainer"></div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
